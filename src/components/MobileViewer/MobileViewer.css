@@ -1,0 +1,346 @@
+.novnc-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border: 1px solid #e9ecef;
+}
+
+.novnc-status {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 14px;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.android-emulator-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(76, 175, 80, 0.3);
+  border-radius: 50%;
+  border-top-color: #4CAF50;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.android-emulator-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202124;
+  color: white;
+  z-index: 1;
+}
+
+.android-emulator-loading p {
+  margin: 0;
+  font-size: 14px;
+  color: #e0e0e0;
+} 
+
+.novnc-status i {
+  font-size: 16px;
+}
+
+.novnc-connecting {
+  background-color: #e8f4fd;
+  color: #0078d7;
+}
+
+.novnc-connected {
+  background-color: #e6f7e6;
+  color: #28a745;
+}
+
+.novnc-disconnected {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.novnc-credentials {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.novnc-error {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+.novnc-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 120, 215, 0.2);
+  border-radius: 50%;
+  border-top-color: #0078d7;
+  animation: novnc-spin 1s linear infinite;
+}
+
+@keyframes novnc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.novnc-viewer {
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.novnc-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* .novnc-screen > div {
+  overflow: hidden;
+} */
+
+.novnc-loading-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.novnc-loading-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #adb5bd;
+}
+
+.novnc-loading-message p {
+  margin-bottom: 20px;
+}
+
+.novnc-controls {
+  display: flex;
+  padding: 12px 15px;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.novnc-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.novnc-button:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.novnc-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.novnc-connect-btn {
+  background-color: #28a745;
+}
+
+.novnc-connect-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.novnc-disconnect-btn {
+  background-color: #dc3545;
+}
+
+.novnc-disconnect-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.novnc-install-btn {
+  background-color: #28a745;
+}
+
+.novnc-install-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.novnc-uninstall-btn {
+  background-color: #dc3545;
+}
+
+.novnc-uninstall-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.novnc-check-btn {
+  background-color: #17a2b8;
+}
+
+.novnc-check-btn:hover:not(:disabled) {
+  background-color: #138496;
+}
+
+.novnc-info {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.novnc-info p {
+  margin-bottom: 8px;
+}
+
+.novnc-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.novnc-info a:hover {
+  text-decoration: underline;
+}
+
+.novnc-server-url {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.novnc-server-url code {
+  background-color: #e9ecef;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.novnc-resize-controls {
+  display: flex;
+  gap: 20px;
+  padding: 12px 15px;
+  background-color: #2d2d2d;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.novnc-dimension-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.novnc-dimension-control label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.novnc-dimension-control input {
+  width: 70px;
+  padding: 4px 8px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.novnc-dimension-control span {
+  color: #999;
+}
+
+.novnc-size-info {
+  margin-left: auto;
+  color: #999;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* Asegurarse de que el canvas de noVNC tenga el tamaño correcto */
+.novnc-screen canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: none;
+}
+
+/* Estilos para la barra de scroll */
+.novnc-screen::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.novnc-screen::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.novnc-screen::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.novnc-scroll-button {
+  margin-left: 12px;
+  padding: 4px 8px;
+  background-color: #444;
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.novnc-scroll-button:hover:not(:disabled) {
+  background-color: #555;
+}
+
+.novnc-scroll-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.novnc-scroll-button i {
+  margin-right: 4px;
+}
+
+.novnc-size-info {
+  display: flex;
+  align-items: center;
+} 

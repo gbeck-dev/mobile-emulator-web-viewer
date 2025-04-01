@@ -1,0 +1,51 @@
+.android-emulator-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.android-emulator-screen {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: #000;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.android-emulator-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202124;
+  color: white;
+  z-index: 1;
+}
+
+.android-emulator-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(76, 175, 80, 0.3);
+  border-radius: 50%;
+  border-top-color: #4CAF50;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.android-emulator-loading p {
+  margin: 0;
+  font-size: 14px;
+  color: #e0e0e0;
+} 
