@@ -15,7 +15,7 @@ Una aplicación web que permite visualizar dispositivos móviles en tu sitio web
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/mobile-emulator-web-viewer.git
+git clone https://github.com/gbeck-dev/mobile-emulator-web-viewer.git
 ```
 
 2. Instala las dependencias:
