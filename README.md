@@ -2,8 +2,7 @@
 
 Una aplicación web que permite visualizar dispositivos móviles en tu sitio web.
 
-![image](image.gif)
-<img src="image.gif" width="500" alt="image">
+<img src="image.gif" width="800" alt="image">
 
 
 ## Requisitos Previos
