@@ -2,7 +2,7 @@
 
 Una aplicación web que permite visualizar dispositivos móviles en tu sitio web.
 
-![demo](demo.gif)
+![image](image.gif)
 
 ## Requisitos Previos
 
